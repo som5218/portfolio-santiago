@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Santiago Ortega Marin - Artificial Intelligence Engineer & IT Developer Portfolio">
-    <title>Santiago Ortega Marin | AI Engineer & Full-Stack Developer</title>
-    <!-- Google Fonts -->
+    <meta name="description" content="Santiago Ortega Marin - AI & Automation Engineer">
+    <title>Santiago Ortega Marin | AI & Automation Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="lang-en dark-theme">
-
+    <div class="bg-glow"></div>
+    <div class="grid-overlay"></div>
+    
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">S.O</a>
+            <a href="#" class="logo"><img src="assets/sign.png" alt="Santiago Ortega" class="sign-logo"></a>
             <div class="nav-links">
                 <a href="#about"><span class="en">About</span><span class="es">Sobre mí</span></a>
-                <a href="#experience"><span class="en">Experience</span><span class="es">Experiencia</span></a>
+                <a href="#tech"><span class="en">Tech Stack</span><span class="es">Tecnologías</span></a>
                 <a href="#projects"><span class="en">Projects</span><span class="es">Proyectos</span></a>
-                <a href="#contact" class="btn-contact-nav"><span class="en">Contact</span><span class="es">Contacto</span></a>
+                <a href="#experience"><span class="en">Experience</span><span class="es">Experiencia</span></a>
                 <div class="lang-switch">
                     <button id="btn-en" class="active">EN</button>
                     <span class="separator">/</span>
                     <button id="btn-es">ES</button>
                 </div>
             </div>
-            <!-- Mobile Menu Toggle -->
             <button class="mobile-toggle" aria-label="Toggle Menu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -36,12 +36,13 @@
                 </svg>
             </button>
         </div>
-        <!-- Mobile Sidebar -->
         <div class="mobile-sidebar">
-            <a href="#about" class="mob-link"><span class="en">About</span><span class="es">Sobre mí</span></a>
-            <a href="#experience" class="mob-link"><span class="en">Experience</span><span class="es">Experiencia</span></a>
-            <a href="#projects" class="mob-link"><span class="en">Projects</span><span class="es">Proyectos</span></a>
-            <a href="#contact" class="mob-link btn-contact-nav"><span class="en">Contact</span><span class="es">Contacto</span></a>
+            <div class="mob-links">
+                <a href="#about" class="mob-link"><span class="en">About</span><span class="es">Sobre mí</span></a>
+                <a href="#tech" class="mob-link"><span class="en">Tech Stack</span><span class="es">Tecnologías</span></a>
+                <a href="#projects" class="mob-link"><span class="en">Projects</span><span class="es">Proyectos</span></a>
+                <a href="#experience" class="mob-link"><span class="en">Experience</span><span class="es">Experiencia</span></a>
+            </div>
             <div class="lang-switch-mob">
                 <button id="btn-en-mob" class="active">EN</button>
                 <button id="btn-es-mob">ES</button>
@@ -50,309 +51,310 @@
     </nav>
 
     <main>
-        <!-- Home / Hero Section -->
+        <!-- HERO -->
         <section id="hero" class="hero section-reveal">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title fade-up">
-                        Santiago <br><span class="accent">Ortega.</span>
-                    </h1>
-                    <h2 class="hero-subtitle fade-up delay-1">
-                        <span class="en">AI Engineer & Software Developer</span>
-                        <span class="es">Ingeniero IA & Desarrollador de Software</span>
-                    </h2>
-                    <p class="hero-desc fade-up delay-2">
-                        <span class="en">
-                            MSc in AI specializing in machine learning modeling, process automation, and robust enterprise Web platforms.
-                        </span>
-                        <span class="es">
-                            Magíster especializado en modelos de machine learning, automatización de procesos y plataformas web empresariales escalables.
-                        </span>
-                    </p>
-                    <div class="hero-cta fade-up delay-3">
-                        <a href="mailto:som5218@gmail.com" class="btn btn-primary">
-                            <span class="en">Get in touch</span>
-                            <span class="es">Contáctame</span>
-                        </a>
-                        <a href="#projects" class="btn btn-secondary">
-                            <span class="en">View Work</span>
-                            <span class="es">Ver Proyectos</span>
-                        </a>
-                    </div>
+            <div class="hero-content container">
+                <div class="hero-profile fade-up">
+                    <img src="assets/santiago2.png" alt="Santiago Ortega Marin" class="hero-avatar">
                 </div>
-                <div class="hero-image-wrapper fade-in delay-2">
-                    <div class="hero-image-bg"></div>
-                    <img src="assets/santiago2.png" alt="Santiago Ortega Marin" class="hero-image" style="object-fit: cover;">
+                <div class="hero-badges fade-up delay-1">
+                    <span class="badge">Python</span>
+                    <span class="badge">AI Automation</span>
+                    <span class="badge">LLM APIs</span>
+                    <span class="badge">FastAPI</span>
+                </div>
+                <h1 class="hero-title fade-up delay-2">
+                    <span class="en">AI & Automation<br>Engineer</span>
+                    <span class="es">Ingeniero en IA &<br>Automatización</span>
+                </h1>
+                <p class="hero-subtitle fade-up delay-3">
+                    <span class="en">I build AI-powered systems, automation workflows and data-driven solutions using Python, LLM APIs and modern backend technologies.</span>
+                    <span class="es">Construyo sistemas basados en IA, flujos de automatización y soluciones impulsadas por datos usando Python, APIs de LLM y tecnologías backend modernas.</span>
+                </p>
+                <p class="hero-intro fade-up delay-4">
+                    <span class="en">Electronic Engineer with a Master’s degree in Artificial Intelligence from Universidad de los Andes, graduated cum laude within the top 3% academic performance of the last five years.</span>
+                    <span class="es">Ingeniero Electrónico con Maestría en Inteligencia Artificial de la Universidad de los Andes, graduado cum laude dentro del 3% de mejor rendimiento académico de los últimos cinco años.</span>
+                </p>
+                <div class="hero-cta fade-up delay-5">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="en">View Projects</span>
+                        <span class="es">Ver Proyectos</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="en">Contact Me</span>
+                        <span class="es">Contáctame</span>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <span class="en">Download CV</span>
+                        <span class="es">Descargar CV</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- ABOUT -->
         <section id="about" class="about section-reveal">
             <div class="container">
                 <div class="section-header">
-                    <h2><span class="en">About Me</span><span class="es">Sobre mí</span></h2>
+                    <h2><span class="en">About Me</span><span class="es">Sobre Mí</span></h2>
                 </div>
-                <div class="about-grid">
-                    <div class="about-text">
+                <div class="about-content">
+                    <div class="about-text glass-card">
                         <p>
-                            <span class="en">
-                                I hold a BSc in Electronic Engineering and an MSc in Artificial Intelligence from Universidad de los Andes. My professional approach integrates advanced web development, scalable cloud systems, and data-driven machine learning architectures.
-                            </span>
-                            <span class="es">
-                                Soy Ingeniero Electrónico y Magíster en Inteligencia Artificial por la Universidad de los Andes. Mi enfoque profesional combina el desarrollo web avanzado y la escalabilidad cloud con sólidas arquitecturas de machine learning guiadas por datos.
-                            </span>
+                            <span class="en">As an <strong>AI & Automation Solutions Engineer</strong>, I specialize in bridging the gap between cutting-edge artificial intelligence research and production-ready enterprise systems. My focus is on <strong>applied AI, backend architecture, and workflow automation</strong> to solve complex real-world operational problems.</span>
+                            <span class="es">Como <strong>Ingeniero de Soluciones de IA y Automatización</strong>, me especializo en cerrar la brecha entre la investigación de IA de vanguardia y los sistemas empresariales listos para producción. Mi enfoque es la <strong>IA aplicada, arquitectura backend y automatización de flujos de trabajo</strong> para resolver problemas operativos complejos.</span>
                         </p>
-                        <p>
-                            <span class="en">
-                                I have verifiable experience building web platforms and enterprise workflows using React, TypeScript, SQL databases, and Google Cloud. I’ve notably led systems automation infrastructure focused on massive data transformation, digital document management, and AI agent prototyping.
-                            </span>
-                            <span class="es">
-                                Cuento con experiencia estructurada en el desarrollo de plataformas web y soluciones empresariales utilizando React, TypeScript, bases de datos SQL y Google Cloud. He liderado múltiples proyectos de integración y automatización, abarcando gestión documental digital inteligente, herramientas transaccionales para procesamiento masivo de información, y recientemente, la creación de prototipos de agentes de IA.
-                            </span>
-                        </p>
-                    </div>
-                    <!-- Skills -->
-                    <div class="skills-container">
-                        <div class="skill-group">
-                            <h3><span class="en">Web & Platforms</span><span class="es">Desarrollo Web</span></h3>
-                            <div class="tags">
-                                <span>React</span>
-                                <span>TypeScript</span>
-                                <span>JavaScript</span>
-                                <span>HTML/CSS</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <h3><span class="en">Cloud & Enterprise Data</span><span class="es">Cloud y Bases de Datos</span></h3>
-                            <div class="tags">
-                                <span>Google Cloud</span>
-                                <span>SQL</span>
-                                <span>AWS EC2</span>
-                                <span>Docker</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <h3><span class="en">AI & Machine Learning</span><span class="es">IA y Análisis de Datos</span></h3>
-                            <div class="tags">
-                                <span>Machine Learning</span>
-                                <span>Python</span>
-                                <span>AI Agents Prototyping</span>
-                                <span>Data Transformation</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <h3><span class="en">Systems & Automation</span><span class="es">Sistemas y Automatización</span></h3>
-                            <div class="tags">
-                                <span>Process Automation</span>
-                                <span>POS & Inventory Systems</span>
-                                <span>SMTP Massive Mailing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience & Education combined in tabular or timeline layout -->
-        <section id="experience" class="timeline-section section-reveal">
-            <div class="container timeline-container">
-                
-                <!-- Experience -->
-                <div class="timeline-column">
-                    <div class="section-header">
-                        <h2><span class="en">Experience</span><span class="es">Experiencia</span></h2>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="tl-date">Sep 2022 - Dec 2025</div>
-                        <h3 class="tl-title"><span class="en">IT Software & Web Architect</span><span class="es">Arquitecto y Desarrollador Web TI</span></h3>
-                        <div class="tl-company">FIDATEC ONG - Gobernación de Risaralda</div>
-                        <p class="tl-desc">
-                            <span class="en">
-                                Developed enterprise web platforms (e.g., hechoenrisaralda.com, convocatoriahechoenrisaralda.com). Engineered the 'Clarity' document management system. 
-                                Designed React platforms with role-based user flows. Implemented complete operational automations covering bulk data transformation routines, automated certificate generation, custom POS and billing inventory solutions, sales analytics structures, and large-scale SMTP integrations.
-                            </span>
-                            <span class="es">
-                                Desarrollo de plataformas web oficiales para convocatorias públicas institucionales (convocatoriahechoenrisaralda.com) y diseño web en hechoenrisaralda.com. Lideré el desarrollo del sistema y portal de gestión documental 'Clarity' para tramitación rápida. Especializado en la automatización de procesos empresariales críticos como recolección de información automática generadora de certificados, sistemas de facturación y POS con analíticas de ventas e inventario, además de integración para envíos de correo masivo. Diseñé plataformas en React estructuradas en módulos orientados a usuarios licenciatarios interactivos.
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="tl-date">Jul 2022 - Sep 2022</div>
-                        <h3 class="tl-title"><span class="en">Customer Experience Rep</span><span class="es">Representante de Experiencia del Cliente</span></h3>
-                        <div class="tl-company">Teleperformance</div>
-                        <p class="tl-desc">
-                            <span class="en">
-                                Resolved operational issues through structured problem analysis using digital support systems.
-                            </span>
-                            <span class="es">
-                                Resolución de problemas operativos mediante análisis estructurado utilizando plataformas de soporte digital.
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Education -->
-                <div class="timeline-column">
-                    <div class="section-header">
-                        <h2><span class="en">Education</span><span class="es">Formación</span></h2>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="tl-date">2024 - 2025</div>
-                        <h3 class="tl-title"><span class="en">MSc in Artificial Intelligence</span><span class="es">Maestría en Inteligencia Artificial</span></h3>
-                        <div class="tl-company">Universidad de los Andes</div>
-                        <p class="tl-desc">
-                            <span class="en">Focus: Machine Learning, AI Systems, Ethics & Applied AI.</span>
-                            <span class="es">Enfoque: Machine Learning, Sistemas de IA, Ética e IA Aplicada.</span>
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="tl-date">2017 - 2022</div>
-                        <h3 class="tl-title"><span class="en">BSc Electronic Engineering</span><span class="es">Ingeniería Electrónica</span></h3>
-                        <div class="tl-company">Universidad del Quindío</div>
-                        <p class="tl-desc">
-                            <span class="en">Core: Digital systems, communications, and electronics.</span>
-                            <span class="es">Fundamentos: Sistemas digitales, comunicaciones y electrónica.</span>
-                        </p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="tl-date">Complementary</div>
-                        <h3 class="tl-title"><span class="en">Specialized Training</span><span class="es">Formación Complementaria</span></h3>
-                        <div class="tl-company">Multiple Institutions</div>
-                        <ul class="tl-list">
+                        <ul class="about-highlights">
                             <li>
-                                <span class="en">AI MasterTrack, Universidad de los Andes (2024)</span>
-                                <span class="es">MasterTrack en Inteligencia Artificial, UniAndes (2024)</span>
+                                <div class="icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                <span><span class="en">Developed robust automation systems using Python, orchestrating complex pipelines and data processing workflows.</span><span class="es">Desarrollo de sistemas de automatización robustos usando Python, orquestando flujos de trabajo complejos y procesamiento de datos.</span></span>
                             </li>
                             <li>
-                                <span class="en">STEM & Industrial AI, Fischertechnik / SENA (2025)</span>
-                                <span class="es">IA Industrial & STEM, Fischertechnik / SENA (2025)</span>
+                                <div class="icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                <span><span class="en">Built and deployed AI-assisted systems, chatbots, and operational platforms managing 1500+ records and 300+ company profiles.</span><span class="es">Construcción y despliegue de sistemas asistidos por IA, chatbots y plataformas operativas gestionando más de 1500 registros y 300 perfiles de empresas.</span></span>
                             </li>
                             <li>
-                                <span class="en">Wireless Communications, Universidad del Quindío</span>
-                                <span class="es">Diplomado en comunicaciones inalámbricas, UQ</span>
+                                <div class="icon-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                                <span><span class="en">Strong academic foundation in biomedical AI, with hands-on experience in complex data pipelines (MRI, DTI, FreeSurfer).</span><span class="es">Sólida base académica en IA biomédica, con experiencia práctica en complejas canalizaciones de datos (MRI, DTI, FreeSurfer).</span></span>
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- TECH STACK -->
+        <section id="tech" class="tech-stack section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="en">Tech Stack</span><span class="es">Tecnologías</span></h2>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <div class="tech-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+                            <h3><span class="en">AI & Data</span><span class="es">IA & Datos</span></h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Machine Learning</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Data Analysis</span><span>Data Visualization</span><span>Biomedical AI</span>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <div class="tech-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+                            <h3><span class="en">AI Automation</span><span class="es">Automatización IA</span></h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span>LLM APIs</span><span>Prompt Engineering</span><span>AI Automation</span><span>Workflow Automation</span><span>Chatbots</span><span>Automation Pipelines</span><span>AI-driven Systems</span>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <div class="tech-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg></div>
+                            <h3><span class="en">Backend & APIs</span><span class="es">Backend & APIs</span></h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span>FastAPI</span><span>Flask</span><span>Django</span><span>REST APIs</span><span>SQL</span><span>API Integrations</span>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <div class="tech-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+                            <h3><span class="en">Infrastructure & Tools</span><span class="es">Infraestructura</span></h3>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Git</span><span>GitHub</span><span>Linux</span><span>Docker</span><span>AWS EC2</span><span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
         <section id="projects" class="projects section-reveal">
             <div class="container">
-                <div class="section-header text-center">
-                    <h2><span class="en">Selected Projects</span><span class="es">Proyectos Destacados</span></h2>
+                <div class="section-header">
+                    <h2><span class="en">Engineering Projects</span><span class="es">Proyectos de Ingeniería</span></h2>
                 </div>
-                
-                <div class="project-grid">
+                <div class="project-list">
                     
                     <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3><span class="en">Enterprise React Platforms & Clarity System</span><span class="es">Sistemas Web Empesariales & Sistema Clarity</span></h3>
-                            <div class="project-tools">
-                                <span>React</span><span>TypeScript</span><span>SQL</span><span>GCP</span>
-                            </div>
-                            <p>
-                                <span class="en">
-                                    Full-stack development of the official public portal ecosystem (Hecho en Risaralda). Built custom modular interfaces for segmented users, integrating scalable SQL databases, document management tools (Clarity System), and fully automated certification flows on Google Cloud.
-                                </span>
-                                <span class="es">
-                                    Desarrollo full-stack de la infraestructura web del proyecto departamental 'Hecho en Risaralda', con módulos basados en React para usuarios licenciatarios interactuando con bases de datos SQL y procesos de automatización robustos alojados de forma eficiente (Google Cloud).
-                                </span>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h3 class="project-title"><span class="en">LLM-based Automation Systems</span><span class="es">Sistemas de Automatización basados en LLM</span></h3>
+                            <p class="project-desc">
+                                <span class="en">Built AI-powered automation systems using LLM APIs for content generation, workflow automation and operational optimization.</span>
+                                <span class="es">Construcción de sistemas de automatización impulsados por IA utilizando APIs de LLM para generación de contenido, automatización de flujos de trabajo y optimización operativa.</span>
                             </p>
+                            <div class="project-details">
+                                <div class="detail-block">
+                                    <h4><span class="en">Engineering Focus</span><span class="es">Enfoque Técnico</span></h4>
+                                    <p><span class="en">AI-assisted automation pipelines and prompt engineering.</span><span class="es">Pipelines de automatización asistida por IA e ingeniería de prompts.</span></p>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span><span>LLM APIs</span><span>Prompt Engineering</span><span>Workflow Automation</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3><span class="en">AI Prototype Development & Agents</span><span class="es">Prototipado Pragmático de Agentes IA</span></h3>
-                            <div class="project-tools">
-                                <span>Python</span><span>Machine Learning</span><span>AI Agents</span>
-                            </div>
-                            <p>
-                                <span class="en">
-                                    Exploratory and applied development of Intelligent AI Agents capable of reasoning contextually through data pipelines to augment software productivity and automate complex analytical interactions systematically.
-                                </span>
-                                <span class="es">
-                                    Investigación e implementación aplicada para la conceptualización de Agentes basados en IA. Modelando flujos productivos innovadores mediante analítica predictiva contextual y automatización de toma de decisiones.
-                                </span>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h3 class="project-title"><span class="en">Neurodevelopment Analysis using MRI & DTI</span><span class="es">Análisis del Neurodesarrollo usando MRI & DTI</span></h3>
+                            <p class="project-desc">
+                                <span class="en">Developed computational workflows for neurodevelopment research using MRI and DTI data with Python and FreeSurfer.</span>
+                                <span class="es">Desarrollo de flujos de trabajo computacionales para investigación en neurodesarrollo usando datos de MRI y DTI con Python y FreeSurfer.</span>
                             </p>
+                            <div class="project-details">
+                                <div class="detail-block">
+                                    <h4><span class="en">Engineering Focus</span><span class="es">Enfoque Técnico</span></h4>
+                                    <p><span class="en">Biomedical AI, reproducible analysis and data processing.</span><span class="es">IA biomédica, análisis reproducible y procesamiento de datos.</span></p>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span><span>Data Processing</span><span>MRI/DTI</span><span>FreeSurfer</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-card" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto; width: 100%;">
-                        <div class="project-content">
-                            <h3><span class="en">Neurodevelopment Medical Analytics Pipeline</span><span class="es">Análisis y Segmentación IA en Neurodesarrollo</span></h3>
-                            <div class="project-tools">
-                                <span>Python</span><span>Data Processing</span><span>MRI/DTI Pipelines</span>
-                            </div>
-                            <p>
-                                <span class="en">
-                                    Thesis focusing on Kangaroo Mother Care. Deep analytical processing of MRI and DTI data utilizing Python and FreeSurfer to evaluate and cross-reference long-term neurodevelopmental outcomes effectively in preterm populations.
-                                </span>
-                                <span class="es">
-                                    Tesis para el grado de la Universidad enfocada en infantes sometidos a "Kangaroo Mother Care". Ingeniería de procesamiento analítico avanzado interpretando Data MRI/DTI con Python y bibliotecas paramétricas médicas evaluando neurodesarrollo a largo plazo de los infantes.
-                                </span>
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h3 class="project-title"><span class="en">Digital Platforms & Workflow Automation</span><span class="es">Plataformas Digitales & Automatización</span></h3>
+                            <p class="project-desc">
+                                <span class="en">Developed digital systems and workflow automation tools for organizational processes, participant management and operational optimization.</span>
+                                <span class="es">Desarrollo de sistemas digitales y herramientas de automatización de flujos de trabajo para procesos organizacionales, gestión de participantes y optimización operativa.</span>
                             </p>
+                            <div class="project-details">
+                                <div class="detail-block">
+                                    <h4><span class="en">Key Achievements</span><span class="es">Logros Clave</span></h4>
+                                    <p><span class="en">Managed 1500+ records and 300+ company profiles, payment integration with ePayco, automated communication systems.</span><span class="es">Gestión de más de 1500 registros y 300 perfiles de empresas, integración de pagos con ePayco, sistemas de comunicación automatizada.</span></p>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>Python</span><span>Backend Architecture</span><span>SQL</span><span>ePayco API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-item">
+                        <div class="project-info">
+                            <h3 class="project-title"><span class="en">AI Chatbot & Automation Solutions</span><span class="es">Chatbot IA & Soluciones de Automatización</span></h3>
+                            <p class="project-desc">
+                                <span class="en">Built chatbot-oriented automation systems for user support, automated communication and operational assistance.</span>
+                                <span class="es">Construcción de sistemas de automatización orientados a chatbots para soporte al usuario, comunicación automatizada y asistencia operativa.</span>
+                            </p>
+                            <div class="project-tech">
+                                <span>LLM APIs</span><span>Python</span><span>Chatbots</span><span>Automation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="timeline-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="en">Experience</span><span class="es">Experiencia</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-marker"></div>
+                        <div class="tl-content glass-card">
+                            <div class="tl-header">
+                                <h3 class="tl-title"><span class="en">AI & Automation Solutions Engineer</span><span class="es">Ingeniero de Soluciones de IA y Automatización</span></h3>
+                                <span class="tl-date">2022 - 2025</span>
+                            </div>
+                            <div class="tl-company">FIDATEC ONG COLOMBIA</div>
+                            <ul class="tl-desc">
+                                <li><span class="en">Spearheaded <strong>automation engineering</strong> initiatives and developed robust <strong>Python systems</strong>.</span><span class="es">Lideré iniciativas de <strong>ingeniería de automatización</strong> y desarrollé robustos <strong>sistemas en Python</strong>.</span></li>
+                                <li><span class="en">Architected and deployed <strong>AI-powered workflows</strong> and <strong>digital platforms</strong>.</span><span class="es">Arquitectura y despliegue de <strong>flujos de trabajo impulsados por IA</strong> y <strong>plataformas digitales</strong>.</span></li>
+                                <li><span class="en">Focused on <strong>process optimization</strong> through custom <strong>APIs</strong> and integrated <strong>operational systems</strong>.</span><span class="es">Enfoque en la <strong>optimización de procesos</strong> a través de <strong>APIs</strong> personalizadas y <strong>sistemas operativos</strong> integrados.</span></li>
+                                <li><span class="en">Provided technical <strong>leadership</strong> to guide automation strategies and system integrations.</span><span class="es">Proporcioné <strong>liderazgo</strong> técnico para guiar las estrategias de automatización y las integraciones de sistemas.</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" class="contact section-reveal">
-            <div class="container contact-container">
-                <div class="contact-box">
-                    <h2><span class="en">Let's build together</span><span class="es">Construyamos juntos</span></h2>
-                    <p>
-                        <span class="en">I'm currently exploring new opportunities. Whether you have a question or just want to say hi, my inbox is always open.</span>
-                        <span class="es">Actualmente estoy explorando nuevas oportunidades. Si tienes una consulta o propuesta comercial, no dudes en contactarme.</span>
-                    </p>
-                    
-                    <div class="contact-links">
-                        <a href="mailto:som5218@gmail.com" class="contact-item">
-                            <span class="icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </span>
-                            <span>som5218@gmail.com</span>
-                        </a>
-                        
-                        <a href="https://wa.me/573188779388" target="_blank" rel="noopener noreferrer" class="contact-item btn-wa">
-                            <span class="icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                </svg>
-                            </span>
-                            <span>+57 318 877 9388</span>
-                        </a>
+        <!-- EDUCATION -->
+        <section id="education" class="education-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2><span class="en">Education</span><span class="es">Educación</span></h2>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-card premium-card">
+                        <div class="edu-badge">Top 3%</div>
+                        <h3 class="edu-title"><span class="en">Master's in Artificial Intelligence</span><span class="es">Maestría en Inteligencia Artificial</span></h3>
+                        <div class="edu-uni">Universidad de los Andes</div>
+                        <div class="edu-distinction">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            Cum Laude Distinction
+                        </div>
+                        <p class="edu-desc">
+                            <span class="en">Top 3% academic performance of the last five years.</span>
+                            <span class="es">Dentro del 3% de mejor rendimiento académico de los últimos cinco años.</span>
+                        </p>
+                    </div>
+                    <div class="edu-card glass-card">
+                        <h3 class="edu-title"><span class="en">BSc Electronic Engineering</span><span class="es">Ingeniería Electrónica</span></h3>
+                        <div class="edu-uni">Universidad del Quindío</div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT -->
+        <section id="contact" class="contact section-reveal">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <h2><span class="en">Let's connect.</span><span class="es">Conectemos.</span></h2>
+                        <p class="contact-subtitle">
+                            <span class="en">Open to remote opportunities, startups and AI-driven technical roles.</span>
+                            <span class="es">Abierto a oportunidades remotas, startups y roles técnicos impulsados por IA.</span>
+                        </p>
+                    </div>
+                    <div class="contact-links-grid">
+                        <a href="https://linkedin.com/in/santiago-ortega-engineer" target="_blank" class="contact-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="contact-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:som5218@gmail.com" class="contact-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Email</span>
+                        </a>
+                        <a href="#" class="contact-btn highlight">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span><span class="en">Download CV</span><span class="es">Descargar CV</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container footer-content">
             <div class="footer-left">
-                <span>&copy; 2026 Santiago Ortega Marin.</span>
+                <span class="logo-small"><img src="assets/sign.png" alt="Santiago Ortega" class="sign-logo"></span>
+                <span class="copyright">&copy; 2026 Santiago Ortega Marin.</span>
             </div>
             <div class="footer-right">
-                <a href="https://linkedin.com/in/santiago-ortega-engineer" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <span class="en">AI & Automation Engineer</span>
+                <span class="es">Ingeniero en IA & Automatización</span>
             </div>
         </div>
     </footer>
