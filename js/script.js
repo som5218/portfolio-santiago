@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnEnMob = document.getElementById("btn-en-mob");
     const btnEsMob = document.getElementById("btn-es-mob");
     const body = document.body;
+    const cvLink = document.getElementById("cv-link");
 
     function setLanguage(lang) {
         if (lang === 'es') {
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             btnEsMob.classList.add('active');
             btnEn.classList.remove('active');
             btnEnMob.classList.remove('active');
+            if (cvLink) cvLink.href = "assets/Santiago%20Ortega%20Mari%CC%81n%20-%20CV.pdf";
         } else {
             body.classList.remove('lang-es');
             body.classList.add('lang-en');
@@ -22,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             btnEnMob.classList.add('active');
             btnEs.classList.remove('active');
             btnEsMob.classList.remove('active');
+            if (cvLink) cvLink.href = "assets/Santiago%20Ortega%20Mari%CC%81n%20-%20CV%20EN.pdf";
         }
     }
 
