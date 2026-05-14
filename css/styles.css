@@ -43,15 +43,15 @@ body {
 }
 
 /* ===== TRANSLATION UTILITY ===== */
-.en, .es { display: none; }
-body.lang-en .en { display: inline-block; }
-body.lang-es .es { display: inline-block; }
+.en, .es { display: none !important; }
+body.lang-en .en { display: inline-block !important; }
+body.lang-es .es { display: inline-block !important; }
 
 /* Inline overrides */
-p .en, p .es, span > .en, span > .es, .hero-subtitle .en, .hero-subtitle .es, .hero-intro .en, .hero-intro .es { display: none; }
-body.lang-en p .en, body.lang-en span > .en, body.lang-en h1 .en, body.lang-en h2 .en, body.lang-en h3 .en, body.lang-en h4 .en, body.lang-en a .en { display: inline; }
-body.lang-es p .es, body.lang-es span > .es, body.lang-es h1 .es, body.lang-es h2 .es, body.lang-es h3 .es, body.lang-es h4 .es, body.lang-es a .es { display: inline; }
-body.lang-en a.btn.en, body.lang-es a.btn.es { display: inline-flex; }
+p .en, p .es, span > .en, span > .es, .hero-subtitle .en, .hero-subtitle .es, .hero-intro .en, .hero-intro .es { display: none !important; }
+body.lang-en p .en, body.lang-en span > .en, body.lang-en h1 .en, body.lang-en h2 .en, body.lang-en h3 .en, body.lang-en h4 .en, body.lang-en a .en { display: inline !important; }
+body.lang-es p .es, body.lang-es span > .es, body.lang-es h1 .es, body.lang-es h2 .es, body.lang-es h3 .es, body.lang-es h4 .es, body.lang-es a .es { display: inline !important; }
+body.lang-en a.btn.en, body.lang-es a.btn.es { display: inline-flex !important; }
 
 /* ===== BACKGROUNDS & PATTERNS ===== */
 .bg-glow {
