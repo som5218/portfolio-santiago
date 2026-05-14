@@ -23,9 +23,9 @@
                 <a href="#projects"><span class="en">Projects</span><span class="es">Proyectos</span></a>
                 <a href="#experience"><span class="en">Experience</span><span class="es">Experiencia</span></a>
                 <div class="lang-switch">
-                    <button id="btn-en" class="active">EN</button>
+                    <button id="btn-en" class="active" aria-label="Switch to English">EN</button>
                     <span class="separator">/</span>
-                    <button id="btn-es">ES</button>
+                    <button id="btn-es" aria-label="Cambiar a Español">ES</button>
                 </div>
             </div>
             <button class="mobile-toggle" aria-label="Toggle Menu">
@@ -44,8 +44,8 @@
                 <a href="#experience" class="mob-link"><span class="en">Experience</span><span class="es">Experiencia</span></a>
             </div>
             <div class="lang-switch-mob">
-                <button id="btn-en-mob" class="active">EN</button>
-                <button id="btn-es-mob">ES</button>
+                <button id="btn-en-mob" class="active" aria-label="Switch to English">EN</button>
+                <button id="btn-es-mob" aria-label="Cambiar a Español">ES</button>
             </div>
         </div>
     </nav>
@@ -81,23 +81,32 @@
                             <span class="en">Contact Me</span>
                             <span class="es">Contáctame</span>
                         </a>
-                        <a id="cv-link" href="assets/Santiago%20Ortega%20Mari%CC%81n%20-%20CV%20EN.pdf" download class="btn btn-outline" target="_blank">
+                        <a id="cv-link" href="assets/Santiago%20Ortega%20Mari%CC%81n%20-%20CV%20EN.pdf" download class="btn btn-outline" target="_blank" rel="noopener noreferrer">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                             <span class="en">Download CV</span>
                             <span class="es">Descargar CV</span>
                         </a>
                     </div>
                     <div class="hero-signature fade-up delay-5">
-                        Santiago Ortega
+                        <img src="assets/sign.png" alt="Santiago Ortega Signature" style="height: 60px; width: auto; filter: invert(1) opacity(0.8);">
                     </div>
                 </div>
                 
                 <div class="hero-visual fade-in delay-2">
                     <div class="visual-glow-1"></div>
                     <div class="visual-glow-2"></div>
-                    <div class="profile-card-modern">
-                        <img src="assets/cv-img.jpeg" alt="Santiago Ortega Marin" class="hero-image-premium">
+                    
+                    <!-- ANIMATED 3D IMAGE CARD -->
+                    <div class="animated-card-container">
+                        <div class="animated-card">
+                            <div class="card-glow"></div>
+                            <div class="card-shine"></div>
+                            <div class="card-image-wrapper">
+                                <img src="assets/cv-img.jpeg" alt="Santiago Ortega Marin" class="card-image">
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
 
             </div>
@@ -340,7 +349,10 @@
                         </div>
                         <h3>WhatsApp</h3>
                         <p>+57 318 877 9388</p>
-                        <a href="https://wa.me/573188779388?text=Hola%20Santiago%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tu%20trabajo%20en%20IA%20y%20automatizaci%C3%B3n.%20Me%20gustar%C3%ADa%20conversar%20sobre%20posibles%20oportunidades%20de%20colaboraci%C3%B3n." target="_blank" class="btn btn-primary btn-full">
+                        <a href="https://wa.me/573188779388?text=Hi%20Santiago%2C%20I%20saw%20your%20portfolio%20and%20I%27m%20interested%20in%20learning%20more%20about%20your%20work%20in%20AI%20and%20automation.%20I%27d%20like%20to%20discuss%20potential%20collaboration%20opportunities." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full en">
+                            Message on WhatsApp
+                        </a>
+                        <a href="https://wa.me/573188779388?text=Hola%20Santiago%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tu%20trabajo%20en%20IA%20y%20automatizaci%C3%B3n.%20Me%20gustar%C3%ADa%20conversar%20sobre%20posibles%20oportunidades%20de%20colaboraci%C3%B3n." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full es">
                             Escribirme por WhatsApp
                         </a>
                     </div>
@@ -351,7 +363,10 @@
                         </div>
                         <h3>Email</h3>
                         <p>som5218@gmail.com</p>
-                        <a href="mailto:som5218@gmail.com?subject=Consulta%20desde%20tu%20portafolio%20-%20Oportunidad%20profesional&body=Hola%20Santiago%2C%0A%0AVi%20tu%20portafolio%20y%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tu%20trabajo%20en%20IA%20y%20automatizaci%C3%B3n.%20Me%20gustar%C3%ADa%20conversar%20sobre%20posibles%20oportunidades%20de%20colaboraci%C3%B3n.%0A%0AQuedo%20atento%28a%29." class="btn btn-secondary btn-full">
+                        <a href="mailto:som5218@gmail.com?subject=Inquiry%20from%20your%20portfolio%20-%20Professional%20opportunity&body=Hi%20Santiago%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%27m%20interested%20in%20learning%20more%20about%20your%20work%20in%20AI%20and%20automation.%20I%27d%20like%20to%20discuss%20potential%20collaboration%20opportunities.%0A%0ABest%20regards%2C" class="btn btn-secondary btn-full en">
+                            Send me an email
+                        </a>
+                        <a href="mailto:som5218@gmail.com?subject=Consulta%20desde%20tu%20portafolio%20-%20Oportunidad%20profesional&body=Hola%20Santiago%2C%0A%0AVi%20tu%20portafolio%20y%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tu%20trabajo%20en%20IA%20y%20automatizaci%C3%B3n.%20Me%20gustar%C3%ADa%20conversar%20sobre%20posibles%20oportunidades%20de%20colaboraci%C3%B3n.%0A%0AQuedo%20atento%28a%29." class="btn btn-secondary btn-full es">
                             Enviarme un correo
                         </a>
                     </div>
@@ -362,7 +377,7 @@
                         </div>
                         <h3>LinkedIn</h3>
                         <p>santiago-ortega-engineer</p>
-                        <a href="https://linkedin.com/in/santiago-ortega-engineer" target="_blank" class="btn btn-outline btn-full">
+                        <a href="https://linkedin.com/in/santiago-ortega-engineer" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-full">
                             Ver LinkedIn
                         </a>
                     </div>

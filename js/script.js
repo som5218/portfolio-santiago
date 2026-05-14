@@ -90,4 +90,53 @@ document.addEventListener("DOMContentLoaded", () => {
             hero.classList.add('is-visible');
         }, 100);
     }
+
+    // --- 3D TILT EFFECT FOR CARD ---
+    const cardContainer = document.querySelector('.animated-card-container');
+    const card = document.querySelector('.animated-card');
+    const cardGlow = document.querySelector('.card-glow');
+
+    if (cardContainer && card) {
+        cardContainer.addEventListener('mousemove', (e) => {
+            const rect = cardContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left; // x position within the element
+            const y = e.clientY - rect.top;  // y position within the element
+
+            // Calculate rotation (max 15 degrees)
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = ((y - centerY) / centerY) * -15;
+            const rotateY = ((x - centerX) / centerX) * 15;
+
+            // Apply transform using requestAnimationFrame for smoothness
+            requestAnimationFrame(() => {
+                card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                
+                // Move glow effect based on mouse position
+                if (cardGlow) {
+                    cardGlow.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0.15) 0%, transparent 60%)`;
+                }
+            });
+        });
+
+        // Reset rotation when mouse leaves
+        cardContainer.addEventListener('mouseleave', () => {
+            requestAnimationFrame(() => {
+                card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+                card.style.transition = `transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)`;
+                if (cardGlow) {
+                    cardGlow.style.opacity = '0';
+                }
+            });
+        });
+
+        // Remove transition during hover for instant mouse follow
+        cardContainer.addEventListener('mouseenter', () => {
+            card.style.transition = `none`;
+            if (cardGlow) {
+                cardGlow.style.opacity = '1';
+            }
+        });
+    }
 });
