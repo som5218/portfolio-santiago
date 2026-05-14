@@ -337,22 +337,6 @@ ul { list-style: none; }
   opacity: 1;
 }
 
-.card-shine {
-  position: absolute;
-  top: 0; left: -100%; width: 50%; height: 100%;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent);
-  transform: skewX(-20deg);
-  z-index: 4;
-  pointer-events: none;
-}
-
-.animated-card:hover .card-shine {
-  animation: shine-sweep 1s forwards;
-}
-
-@keyframes shine-sweep {
-  100% { left: 200%; }
-}
 
 .card-image-wrapper {
   position: relative;
